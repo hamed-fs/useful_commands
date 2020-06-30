@@ -1,0 +1,9 @@
+angular commands
+
+# ng new <project_name>
+# ng serve
+# ng build --prod
+# ng g c --spec=false <component_name> 
+
+# sudo nom install -g @angular/cli
+# sudo npm install -g typescript

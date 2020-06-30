@@ -1,0 +1,10 @@
+adb commands
+
+$ adb uninstall <package_name>
+$ adb install <path>
+$ adb push <source_path> /sdcard/
+$ adb pull /sdcard/… <destination_path>
+
+$ pub global activate tuneup
+
+chrome://inspect/

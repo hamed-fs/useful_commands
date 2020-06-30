@@ -1,0 +1,34 @@
+git commands
+
+git stash
+$ git stash list
+$ git stash show stash@{<number>}
+$ git stash save <message>
+$ git stash apply stash@{<number>}
+$ git stash drop stash@{<number>}
+$ git stash pop stash@{<number>}
+$ git stash clear
+
+adding an existing project to GitHub
+$ git init
+$ git add .
+$ git commit -m ‘- initial commit’
+$ git remote add origin <remote repository URL>
+$ git remote -v
+$ git push -u origin master
+
+git commit
+$ git fetch upstream
+$ git checkout master
+$ git merge upstream/master -m “upstream/master into origin/master”
+$ git push -u origin master
+
+git branch
+$ git checkout -b <branch_name>
+$ git push origin <branch_name>
+
+other commands
+$ git branch
+
+$ git fetch
+$ git checkout -b <local_branch_name> <origin/branch_name>
