@@ -1,0 +1,53 @@
+01. command line operations
+    $ pwd                                                               // print working directory
+    $ cd                                                                // change directory
+    $ ls [-a]                                                           // list the contents of a directory, [-a] shows hidden files
+    $ man <command>                                                     // opens the manual for a command
+    $ clear                                                             // clear terminal output
+    $ mkdir                                                             // create a new directory
+    $ cp <source_file> <destination_file>                               // copy a file
+    $ mv <source_file> <path>                                           // move a file to a directory
+    $ rm [-r] <path>                                                    // remove a file, [-r] removes a directory
+    $ touch <file_name>                                                 // creates a new file
+    $ nano <file_name>                                                  // opens the file in editor
+
+    notes:
+        - [..] is an alias for parent directory
+        - [.] is an alias for current directory
+
+02. git basics
+    $ git init                                                          // initialize git repository
+    $ git status                                                        // shows files state in git repository
+    $ git add <. | file_name>                                           // stage (track) changes, use [.] to track all files
+    $ git diff [--staged]                                               // compares staged file and shows changes, [--staged] shows changes that are not committed
+    $ git commit [-v] [-a] [-m "commit_message"]                        // commits changes to repository, [-v] shows current diff in the message template, [-a] adds all modified file to staging area and commit
+
+    notes:
+        - create '.gitignore' file and put excluded file names in it to prevent them from tracking
+
+03. browsing history
+    $ git log [-<count>] [-p] [-oneline | full | fuller]                // [-<count>] shows last <count> commits, [-p] is like git diff command
+    $ git log [--since | --from | --until] ["n months | days | ..."]    // filter history by date
+    $ git log [- graph]                                                 // shows changes graph
+
+04. undoing mistakes
+    $ git commit --amend                                                // add staged file to last commit and replace it with new one
+    $ git revert <git_hash_code>                                        // add a new commit and revert previous commit
+
+05. working with remote repositories
+    $ git clone <url>                                                   // clone a remote repository to local machine
+    $ git remote [show <remote_repository>]                             // shows remote repositories
+    $ git fetch <repository_name>                                       // fetches data from remote repository, but do not merge them to local repository
+    $ git merge <remote_repository> <local_repository>                  // merges a remote repository (e.g. origin/master) to local repository (e.g. master)
+    $ git push -u <remote_repository> <local_repository>                // pushes local repository (e.g. master) changes to remote repository (e.g. origin/master)
+    $ git pull <remote_repository> <local_repository>                   // fetches and merges remote repository (e.g. origin/master) to local repository (e.g. master)
+    $ git remote remove <remote_repository>                             // removes a remote repository (e.g. origin/master)
+
+06. stashing changes
+    $ git stash list                                                    // shows stashes list
+    $ git stash show stash@{<number>}                                   // shows a specific stash (e.g. stash@{1})
+    $ git stash save <message>                                          // saves changes to stash
+    $ git stash apply [stash@{<number>}]                                // apply a stash, applies the last stash if stash name is omitted
+    $ git stash drop stash@{<number>}                                   // removes a stash
+    $ git stash pop stash@{<number>}                                    // applies and remove a stash
+    $ git stash clear                                                   // removes all stashes

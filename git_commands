@@ -14,7 +14,6 @@ $ git init
 $ git add .
 $ git commit -m ‘- initial commit’
 $ git remote add origin <remote repository URL>
-$ git remote -v
 $ git push -u origin master
 
 git commit
@@ -24,15 +23,30 @@ $ git merge upstream/master -m “upstream/master into origin/master”
 $ git push -u origin master
 
 git branch
+$ git branch
+$ git branch --all
+$ git branch <branch_name>
 $ git checkout -b <branch_name>
+$ git checkout <branch_name>
 $ git push origin <branch_name>
 
 other commands
-$ git branch
-
 $ git fetch
 $ git checkout -b <local_branch_name> <origin/branch_name>
 
 delete branch
 $ git branch -d <branch_name>
 $ git push origin --delete <branch_name>
+
+$ git log --oneline --graph --decorate --all
+
+$ git reset [<file_name>] --hard --soft --mixed
+
+$ git diff
+
+$ git clone <url>
+$ git remote
+
+
+
+$ pwd
