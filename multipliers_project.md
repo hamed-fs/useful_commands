@@ -103,8 +103,8 @@ Contains application theme-related classes
 │   │   │   └── ...
 │   │   ├── theme_provider
 │   │   └── ...
-│   └── modules
-│       ├── module 01
+│   └── features
+│       ├── features 01
 │       │   ├── blocs
 │       │   ├── exceptions
 │       │   ├── pages
@@ -112,8 +112,8 @@ Contains application theme-related classes
 │       └── module ...
 ├── test
 │   ├── core
-│   └── modules
-│       ├── module 01
+│   └── features
+│       ├── features 01
 │       │   ├── blocs
 │       │   ├── exceptions
 │       │   ├── pages
