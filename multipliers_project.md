@@ -53,7 +53,7 @@ Exceptions Directory contains exception classes. An Exception class should exten
 
 #### core
 
-The core directory contains any common classes and any class that may be used by more than one module.
+The core directory contains any common classes and any class that may be used by more than one feature.
 
 #### helpers
 
@@ -61,7 +61,7 @@ A helper class is used to assist in providing some functionality, which isn't th
 
 #### blocs
 
-This directory contains blocs that will use by module, each bloc should have `bloc`, `event`, and `state` classes that organize under corresponding bloc directory.
+This directory contains blocs that will use by feature, each bloc should have `bloc`, `event`, and `state` classes that organize under corresponding bloc directory.
 
 #### pages
 
@@ -81,7 +81,7 @@ Contains application theme-related classes
 
 #### Notes:
 
-- We should logically breakdown our app components under several modules
+- We should logically breakdown our app components under several features
 - These directories may have several sub-folders for categorizing structure base on logical connections between components.
 - Test files should reside inside a `test` folder at the root of the application.
 - Unit and Widget tests must be in a `test` folder. The integration test must go in a separate directory called `test_driver` and both folders must be at the same level as the lib folder.
