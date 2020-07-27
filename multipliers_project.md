@@ -104,21 +104,21 @@ Contains application theme-related classes
 │   │   ├── theme_provider
 │   │   └── ...
 │   └── features
-│       ├── features 01
+│       ├── feature 01
 │       │   ├── blocs
 │       │   ├── exceptions
 │       │   ├── pages
 │       │   └── widgets
-│       └── module ...
+│       └── feature ...
 ├── test
 │   ├── core
 │   └── features
-│       ├── features 01
+│       ├── feature 01
 │       │   ├── blocs
 │       │   ├── exceptions
 │       │   ├── pages
 │       │   └── widgets
-│       └── module ...
+│       └── feature ...
 └── test_driver
     └── ...
 
