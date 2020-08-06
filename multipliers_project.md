@@ -79,20 +79,12 @@ This directory has custom widgets which are used in multiple different pages
 
 Contains application theme-related classes
 
-#### Notes:
-
-- We should logically breakdown our app components under several features
-- These directories may have several sub-folders for categorizing structure base on logical connections between components.
-- Test files should reside inside a `test` folder at the root of the application.
-- Unit and Widget tests must be in a `test` folder. The integration test must go in a separate directory called `test_driver` and both folders must be at the same level as the lib folder.
-- Test files should always end with `_test.dart`, this is the convention used by the test runner when searching for tests. Also, test directories should mirror exactly the project structure for ease of finding the corresponding tests for each app component that needs testing.
-- If test classes need to have mock data, add a file with `_data` postfix and put it aside test file.
-
 ```
 .
 ├── assets
 │   ├── fonts
 │   ├── icons
+│   ├── images
 │   └── ...
 ├── lib
 │   ├── core
@@ -105,21 +97,31 @@ Contains application theme-related classes
 │   │   └── ...
 │   └── features
 │       ├── feature 01
-│       │   ├── blocs
 │       │   ├── exceptions
-│       │   ├── pages
-│       │   └── widgets
+│       │   ├── models
+│       │   └── presentation
+│       │       ├── blocs
+│       │       ├── pages
+│       │       └── widgets
 │       └── feature ...
 ├── test
 │   ├── core
+│   │   └── ...
 │   └── features
 │       ├── feature 01
-│       │   ├── blocs
-│       │   ├── exceptions
-│       │   ├── pages
-│       │   └── widgets
-│       └── feature ...
+│       └── ...
 └── test_driver
     └── ...
 
 ```
+
+---
+
+#### Notes:
+
+- We should logically breakdown our app components under several features
+- These directories may have several sub-folders for categorizing structure base on logical connections between components.
+- Test files should reside inside a `test` folder at the root of the application.
+- Unit and Widget tests must be in a `test` folder. The integration test must go in a separate directory called `test_driver` and both folders must be at the same level as the lib folder.
+- Test files should always end with `_test.dart`, this is the convention used by the test runner when searching for tests. Also, test directories should mirror exactly the project structure for ease of finding the corresponding tests for each app component that needs testing.
+- If test classes need to have mock data, add a file with `_data` postfix and put it aside test file.

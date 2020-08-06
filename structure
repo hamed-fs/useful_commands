@@ -1,0 +1,31 @@
+# assets
+## fonts
+## icons
+## images
+## ...
+# lib
+## core
+### exceptions
+### helpers
+### services
+#### dependency_injector
+#### ...
+### theme_provider
+### ...
+## features
+### feature 01
+#### exceptions
+#### models
+#### presentation
+##### blocs
+##### pages
+##### widgets
+### feature ...
+# test
+## core
+### ...
+## features
+### feature 01
+### ...
+# test_driver
+## ...
