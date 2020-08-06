@@ -89,6 +89,11 @@ Contains application theme-related classes
 ├── lib
 │   ├── core
 │   │   ├── exceptions
+│   │   ├── models
+│   │   ├── presentation
+│   │   │   ├── blocs
+│   │   │   ├── pages
+│   │   │   └── widgets
 │   │   ├── helpers
 │   │   ├── services
 │   │   │   ├── dependency_injector
@@ -112,7 +117,6 @@ Contains application theme-related classes
 │       └── ...
 └── test_driver
     └── ...
-
 ```
 
 ---
@@ -123,14 +127,12 @@ Contains application theme-related classes
 - Widgets should be in a dedicate directory (same name as widget name) under widgets directory with all related private sub-widgets, and sub-widgets should be `part of` main-widget.
 
 ```
-
 widgets
 └── sample_widget
     ├── sample_widget.dart
     ├── sub_widget_01.dart
     ├── sub_widget_02.dart
     └── ...
-
 ```
 
 ### Test rules

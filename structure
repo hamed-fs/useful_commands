@@ -6,6 +6,11 @@
 # lib
 ## core
 ### exceptions
+#### models
+#### presentation
+##### blocs
+##### pages
+##### widgets
 ### helpers
 ### services
 #### dependency_injector
